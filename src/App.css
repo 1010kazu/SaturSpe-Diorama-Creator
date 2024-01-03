@@ -32,24 +32,28 @@
 }
 
 .line-horizontal {
+  position: relative;
   width: 52px;
   height: 2px;
   background: black;
 }
 
 .line-vertical {
+  position: relative;
   width: 2px;
   height: 50px;
   background: black;
 }
 
 .line-horizontal-end {
+  position: relative;
   width: 54px;
   height: 2px;
   background: black;
 }
 
 .line-vertical-end {
+  position: relative;
   width: 2px;
   height: 50px;
   background: black;
@@ -63,13 +67,49 @@
 }
 
 .obstacle {
-  position: relative;
   background-image: url("./assets/obstacle.svg");
   width: 48px;
   height: 48px;
   margin: 1px;
 }
 
+.line-object-vertical-init {
+  position: absolute;
+  top: 12px;
+  left: -12px;
+  margin: 1px;
+}
+
+.line-object-horizontal-init {
+  position: absolute;
+  top: -12px;
+  left: 15px;
+  margin: 1px;
+}
+
+.line-object-vertical-circle {
+  position: absolute;
+  top: 12px;
+  left: -12px;
+  background-image: url("./assets/circle.svg");
+  width: 24px;
+  height: 24px;
+  margin: 1px;
+}
+
+.line-object-horizontal-circle {
+  position: absolute;
+  top: -12px;
+  left: 15px;
+  background-image: url("./assets/circle.svg");
+  width: 24px;
+  height: 24px;
+  margin: 1px;
+}
+
+.end{
+  position: relative;
+}
 .line-row {
   display: flex;
 }
